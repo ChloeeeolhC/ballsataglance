@@ -1,0 +1,54 @@
+/* 全局样式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/map-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 背景容器 */
+.background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* 球图标的基础样式 */
+.ball {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ball img {
+    width: 50px;
+    height: 50px;
+}
+
+/* 鼠标悬停时球图标的缩放效果 */
+.ball:hover {
+    transform: scale(1.2);
+}
+
+/* 返回按钮样式 */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
