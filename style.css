@@ -7,7 +7,7 @@ body, html {
 }
 
 /* 确认这是你在style.css中的代码 */
-.background {
+.index-background {
     width: 100%;
     height: 100vh;
     background-image: url('../images/map-background.png'); /* 确认路径与图片名称 */
