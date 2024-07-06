@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sports Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="map-container">
+        <div class="ball handball" data-text="手球"></div>
+        <div class="ball soccer" data-text="足球"></div>
+        <div class="ball tennis" data-text="网球"></div>
+        <div class="ball baseball" data-text="棒球"></div>
+        <div class="ball volleyball" data-text="排球"></div>
+        <div class="ball basketball" data-text="篮球"></div>
+        <div class="ball tabletennis" data-text="乒乓球"></div>
+        <div class="ball badminton" data-text="羽毛球"></div>
+        <div class="text"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
