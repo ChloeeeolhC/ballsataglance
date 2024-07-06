@@ -1,29 +1,23 @@
-/* 全局样式 */
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/map-background.jpg') no-repeat center center fixed;
+    overflow: hidden;
+}
+
+.background {
+    background: url('../images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 背景容器 */
-.background {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
-/* 球图标的基础样式 */
 .ball {
     position: absolute;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .ball img {
@@ -31,68 +25,20 @@ body, html {
     height: 50px;
 }
 
-/* 鼠标悬停时球图标的缩放效果 */
 .ball:hover {
     transform: scale(1.2);
+    opacity: 0.8;
 }
 
-/* 返回按钮样式 */
-.back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.back-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.handball-background {
-    background: url('../images/handballbg.jpg') no-repeat center center fixed;
-}
-
-.hockey-background {
-    background: url('../images/hockeybg.jpg') no-repeat center center fixed;
-}
-
-.football-background {
-    background: url('../images/footballbg.jpg') no-repeat center center fixed;
-}
-
-.tennis-background {
-    background: url('../images/tennisbg.jpg') no-repeat center center fixed;
-}
-
-.badminton-background {
-    background: url('../images/badmintonbg.jpg') no-repeat center center fixed;
-}
-
-.golf-background {
-    background: url('../images/golfbg.jpg') no-repeat center center fixed;
-}
-
-.baseball-background {
-    background: url('../images/baseballbg.jpg') no-repeat center center fixed;
-}
-
-.waterpolo-background {
-    background: url('../images/waterpolobg.jpg') no-repeat center center fixed;
-}
-
-.pingpong-background {
-    background: url('../images/pingpongbg.jpg') no-repeat center center fixed;
-}
-
-.basketball-background {
-    background: url('../images/basketballbg.jpg') no-repeat center center fixed;
-}
-
-.volleyball-background {
-    background: url('../images/volleyballbg.jpg') no-repeat center center fixed;
-}
+/* Add specific positions for each ball */
+#handball { top: 20%; left: 10%; }
+#hockey { top: 20%; left: 30%; }
+#football { top: 20%; left: 50%; }
+#tennis { top: 20%; left: 70%; }
+#badminton { top: 20%; left: 90%; }
+#golf { top: 50%; left: 10%; }
+#baseball { top: 50%; left: 30%; }
+#waterpolo { top: 50%; left: 50%; }
+#pingpong { top: 50%; left: 70%; }
+#basketball { top: 50%; left: 90%; }
+#volleyball { top: 80%; left: 50%; }
