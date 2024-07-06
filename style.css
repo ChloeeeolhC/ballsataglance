@@ -57,7 +57,6 @@ body, html {
     transition: background-color 0.3s;
 }
 
-.back-button:hover {
-    background-color: #f0f0f0;
+.handball-background {
+    background: url('../images/handballbg.jpg') no-repeat center center fixed;
 }
-
