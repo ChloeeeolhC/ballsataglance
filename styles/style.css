@@ -52,3 +52,47 @@ body, html {
 .back-button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+.handball-background {
+    background: url('../images/handballbg.jpg') no-repeat center center fixed;
+}
+
+.hockey-background {
+    background: url('../images/hockeybg.jpg') no-repeat center center fixed;
+}
+
+.football-background {
+    background: url('../images/footballbg.jpg') no-repeat center center fixed;
+}
+
+.tennis-background {
+    background: url('../images/tennisbg.jpg') no-repeat center center fixed;
+}
+
+.badminton-background {
+    background: url('../images/badmintonbg.jpg') no-repeat center center fixed;
+}
+
+.golf-background {
+    background: url('../images/golfbg.jpg') no-repeat center center fixed;
+}
+
+.baseball-background {
+    background: url('../images/baseballbg.jpg') no-repeat center center fixed;
+}
+
+.waterpolo-background {
+    background: url('../images/waterpolobg.jpg') no-repeat center center fixed;
+}
+
+.pingpong-background {
+    background: url('../images/pingpongbg.jpg') no-repeat center center fixed;
+}
+
+.basketball-background {
+    background: url('../images/basketballbg.jpg') no-repeat center center fixed;
+}
+
+.volleyball-background {
+    background: url('../images/volleyballbg.jpg') no-repeat center center fixed;
+}
