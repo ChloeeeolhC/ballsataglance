@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('bg0.png');
+    background-image: url('../images/bg0.png');
     background-repeat: no-repeat;
     background-size: cover; /* 修改此处以确保图片内容完全显示 */
 /*     background-position: center; 可选，确保图片居中显示 */
