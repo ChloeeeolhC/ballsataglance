@@ -1,16 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.background {
-    background-image: url('images/map-background.png'); /* 确保背景图片路径正确 */
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+    font-family: Arial, sans-serif;
+    background-image: url('map-background.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* 修改此处以确保图片内容完全显示 */
+/*     background-position: center; 可选，确保图片居中显示 */
 }
 
 .back-button {
