@@ -1,26 +1,33 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 
-/* 确认这是你在style.css中的代码 */
-.index-background {
-    width: 100%;
-    height: 100vh;
-    background-image: url('../images/map-background.png'); /* 确认路径与图片名称 */
+.background {
+    background-image: url('images/map-background.png'); /* 确保背景图片路径正确 */
     background-size: cover;
     background-position: center;
+    width: 100vw;
+    height: 100vh;
     position: relative;
 }
 
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #000;
+    z-index: 1000;
+}
 
 .ball {
     position: absolute;
-    cursor: pointer;
-    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .ball img {
@@ -29,37 +36,72 @@ body, html {
 }
 
 .ball:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
+    transform: scale(1.5);
 }
 
-/* Add specific positions for each ball */
-#handball { top: 20%; left: 10%; }
-#hockey { top: 20%; left: 30%; }
-#football { top: 20%; left: 50%; }
-#tennis { top: 20%; left: 70%; }
-#badminton { top: 20%; left: 90%; }
-#golf { top: 50%; left: 10%; }
-#baseball { top: 50%; left: 30%; }
-#waterpolo { top: 50%; left: 50%; }
-#pingpong { top: 50%; left: 70%; }
-#basketball { top: 50%; left: 90%; }
-#volleyball { top: 80%; left: 50%; }
-
-.back-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+/* 定位每个球的位置 */
+#handball {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.back-button:hover {
-    background-color: #f0f0f0;
+#hockey {
+    top: 10%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#football {
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#tennis {
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+#badminton {
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#golf {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#baseball {
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#waterpolo {
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#pingpong {
+    top: 90%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#basketball {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#volleyball {
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
 }
