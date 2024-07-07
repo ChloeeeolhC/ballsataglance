@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg0.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* 修改此处以确保图片内容完全显示 */
+/*     background-position: center; 可选，确保图片居中显示 */
+}
+.button-wrapper {
+  position: fixed; /* 固定定位 */
+  bottom: 20%; /* 距离底部20px */
+  right: 25%; /* 距离右边20px */
+}
+.btn-class-name {
+  --color: 172, 211, 182 ;
+  border-radius: .5em;
+  transition: .3s;
+  background-color: rgba(var(--color), .4);
+  color: #509C63;
+  fill: rgb(var(--color));
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border: 0px solid rgb(var(--color));
+  box-shadow: 0 0 10px rgba(var(--color), .3);
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: .5em 1em;
+  text-decoration: none; /* 去除a标签的下划线 */
+}
+
+.btn-class-name:hover {
+  box-shadow: 0 0 0 5px rgba(var(--color), .5);
+}
+
+.btn-class-name span {
+  transform: scale(.8);
+  transition: .3s;
+}
+
+.btn-class-name:hover span {
+  transform: scale(1);
+}
+
+.btn-class-name svg {
+  font-size: 0;
+  transform: scale(0.5) translateX(0%) rotate(-180deg);
+  transition: .3s;
+}
+
+.btn-class-name:hover svg {
+  font-size: 20px;
+  transform: scale(1) translateX(20%) rotate(0deg);
+}
+
+.btn-class-name:active {
+  transition: 0s;
+  box-shadow: 0 0 0 5px rgb(var(--color));
+}
